@@ -18,7 +18,6 @@ import {
   IconSearch,
   IconSend,
   IconShield,
-  IconStars,
   IconWhatsApp,
 } from "./icons";
 import aboutTeamImg from "./assets/images/about-team.jpg";
@@ -415,7 +414,7 @@ export default function App() {
 
       <footer className="nr-footer">
         <div className="nr-container nr-footer__inner">
-          <div className="nr-grid nr-cols-md-2 nr-grid--3-lg">
+          <div className="nr-footer__grid">
             <div>
               <div className="nr-flex nr-items-center nr-gap-2 nr-mb-3">
                 <span className="nr-brand__mark">GS</span>
@@ -452,7 +451,6 @@ export default function App() {
           <hr className="nr-footer__hr" />
           <div className="nr-footer__bottom">
             <span>© {new Date().getFullYear()} GetSeofy · getseofy.com</span>
-            <span></span>
           </div>
         </div>
       </footer>
@@ -488,7 +486,7 @@ function NavItem({ pageKey, label, active, onClick }: { pageKey: PageKey; label:
 
 function FooterLink({ label, onClick }: { label: string; onClick: () => void }) {
   return (
-    <li className="nr-mb-2">
+    <li>
       <a
         href="#"
         className="nr-footer__link"
@@ -510,9 +508,6 @@ function Home({ onNavigate }: { onNavigate: (p: PageKey) => void }) {
         <div className="nr-container">
           <div className="nr-grid nr-grid--2-lg">
             <div>
-              <span className="nr-eyebrow">
-                <IconStars /> Performance SEO for US brands
-              </span>
               <h1 className="nr-h1">We turn search into revenue, not just rankings.</h1>
               <p className="nr-lead nr-mb-4">
                 GetSeofy builds technical foundations, authoritative content, and earned links that compound. See real portfolio metrics: DR, traffic, backlinks, and ROI.
@@ -971,7 +966,7 @@ function Portfolio({ data }: { data: PortfolioRow[] }) {
                     <GetSeofyPortfolioPlaceholder />
                   </div>
                 )}
-                {r.highlight ? <div className="nr-highlight-pill">{r.highlight}</div> : null}
+                {r.highlight ? <p className="nr-case-kicker nr-mb-2">{r.highlight}</p> : null}
                 <h3 className="nr-h5 nr-mb-2">{r.client}</h3>
                 <p className="nr-muted nr-small nr-mb-2">
                   {r.engagement ? <>{r.engagement}</> : null}
@@ -996,7 +991,7 @@ function Portfolio({ data }: { data: PortfolioRow[] }) {
               .map((r) => (
                 <article key={r.client} className="nr-case-deep nr-card">
                   <div className="nr-case-deep__meta nr-flex nr-flex-wrap nr-gap-2 nr-mb-2">
-                    <span className="nr-badge nr-badge--soft">{r.industry}</span>
+                    <span className="nr-case-industry">{r.industry}</span>
                     {r.engagement ? <span className="nr-muted nr-small">{r.engagement}</span> : null}
                     {r.stack ? <span className="nr-muted nr-small">{r.stack}</span> : null}
                   </div>
@@ -1022,7 +1017,7 @@ function Portfolio({ data }: { data: PortfolioRow[] }) {
                       <li key={t}>{t}</li>
                     ))}
                   </ul>
-                  {r.highlight ? <div className="nr-highlight-pill nr-mb-4">{r.highlight}</div> : null}
+                  {r.highlight ? <p className="nr-case-kicker nr-mb-4">{r.highlight}</p> : null}
                   <p className="nr-case-label">Outcome</p>
                   <p className="nr-text-soft nr-mb-0">{r.caseSummary}</p>
                   <a className="nr-btn nr-btn--outline nr-btn--sm nr-mt-4" href={r.caseStudyUrl || "#contact"}>
