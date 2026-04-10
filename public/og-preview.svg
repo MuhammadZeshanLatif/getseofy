@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="GetSeofy  Performance SEO">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#152238"/>
+      <stop offset="50%" stop-color="#0b0d12"/>
+      <stop offset="100%" stop-color="#06080c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="22%" cy="18%" r="55%">
+      <stop offset="0%" stop-color="#5b8def" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#5b8def" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8eb8ff"/>
+      <stop offset="45%" stop-color="#5b8def"/>
+      <stop offset="100%" stop-color="#8ef0c1"/>
+    </linearGradient>
+    <linearGradient id="word" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#b8d4ff"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <g transform="translate(96 120)">
+    <rect width="112" height="112" rx="28" fill="#11141b" stroke="url(#rim)" stroke-width="3"/>
+    <text x="56" y="76" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="44" font-weight="800" letter-spacing="-0.06em" fill="url(#rim)">GS</text>
+  </g>
+  <text x="96" y="340" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="86" font-weight="700" fill="url(#word)" letter-spacing="-0.03em">GetSeofy</text>
+  <text x="96" y="420" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="34" font-weight="500" fill="#9aa3b2">Performance SEO · Technical · Content · Authority</text>
+  <text x="96" y="480" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="26" font-weight="500" fill="#5b8def">getseofy.com</text>
+  <path d="M96 520 L200 520 L240 460 L320 540 L420 420 L520 500 L620 380 L720 450 L900 280 L1104 280" fill="none" stroke="url(#rim)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+  <circle cx="1104" cy="280" r="12" fill="#8ef0c1"/>
+</svg>
